@@ -1,0 +1,15 @@
+.loadingScreen {
+    text-align: center;
+}
+
+.loadingTextContainer {
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    margin-top: 300px;
+}
+
+.loadingText {
+    color: var(--text-color);
+    font-size: 100px;
+}

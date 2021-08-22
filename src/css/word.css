@@ -1,0 +1,17 @@
+.word {
+    width: fit-content;
+    padding: 12px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.word:focus {
+    background-color: var(--highlight-color);
+}
+
+.wordText {
+    margin: 0;
+    font-size: 32px;
+    color: var(--text-color);
+}
