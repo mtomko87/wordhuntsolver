@@ -1,15 +1,18 @@
 .inputSquare {
-    height: 100px;
-    width: 100px;
+    height: min(100px, 10vmin);
+    width: min(100px, 10vmin);
+    border: none;
+    caret-color: transparent;
     background-color: white;
     box-shadow: 2px 2px 5px #ccc;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: min(10px, 1vmin);
     text-align: center;
     position: relative;
     outline: none;
     bottom: 0px;
     transition: 0.2s;
+    font-size: min(60px, 6vmin);
+    color: var(--text-color);
 }
 
 .inputSquare:focus {

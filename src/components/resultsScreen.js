@@ -10,6 +10,10 @@ const ResultsScreen = props => {
     return (
         <div className="resultsScreen">
             <button className="backButton" onClick={props.goHome}></button>
+            <div className="boardDiv">
+                <p className="wordCount">{props.results.length + " WORDS"}</p>
+                <DisplayBoard letters={props.board} path={path}/>
+            </div>
             {props.results.length > 0 && <div className="wordsDivOuter">
                 <div className="wordsDiv">
                     {props.results.map(result =>
@@ -17,10 +21,6 @@ const ResultsScreen = props => {
                     )}
                 </div>
             </div>}
-            <div className="boardDiv">
-                <p className="wordCount">{props.results.length + " WORDS"}</p>
-                <DisplayBoard letters={props.board} path={path}/>
-            </div>
         </div>
     );
 }

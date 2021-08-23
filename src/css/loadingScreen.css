@@ -1,12 +1,8 @@
 .loadingScreen {
-    text-align: center;
-}
-
-.loadingTextContainer {
-    display: inline-block;
-    width: 500px;
-    text-align: left;
-    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .loadingText {

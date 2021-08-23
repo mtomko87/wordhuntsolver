@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: row-reverse;
+    min-height: 100vh;
 }
 
 .wordsDivOuter {
@@ -33,6 +34,17 @@
 
 .wordCount {
     margin: 0;
+    margin-top: 20px;
     font-size: 48px;
     color: var(--text-color);
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .resultsScreen {
+        flex-direction: column;
+    }
+
+    .wordsDivOuter {
+        height: fit-content;
+    }
 }

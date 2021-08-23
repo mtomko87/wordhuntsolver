@@ -4,12 +4,15 @@
 
 .sizeHeader {
     color: var(--text-color);
-    font-size: 96px;
+    font-size: 90px;
     margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .sizeChoices {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }

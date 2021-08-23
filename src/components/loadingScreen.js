@@ -14,9 +14,7 @@ const LoadingScreen = () => {
 
     return (
         <div className="loadingScreen">
-            <div className="loadingTextContainer">
-                <p className="loadingText">LOADING{".".repeat(numDots)}</p>
-            </div>
+            <p className="loadingText">LOADING{".".repeat(numDots)}</p>
         </div>
     );
 }

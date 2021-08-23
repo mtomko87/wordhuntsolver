@@ -1,3 +1,4 @@
-.displayBoard {
-    position: relative;
+.displayBoardItem {
+    display: inline-block;
+    padding: min(10px, 1vmin);
 }

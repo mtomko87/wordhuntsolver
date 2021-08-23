@@ -7,6 +7,9 @@ const InputBoard = props => {
     let array = new Array(props.size);
     for (let i = 0; i < array.length; i++) {
         array[i] = new Array(props.size);
+        for (let j = 0; j < props.size; j++) {
+            array[i][j] = "";
+        }
     }
 
     const [letters, setLetters] = useState(array);
@@ -58,7 +61,7 @@ const InputBoard = props => {
     return (
         <div className="inputBoard">
             {numbers.map((row) =>
-                <div key={row} className="boardRow">
+                <div key={row}>
                     {numbers.map((col) =>
                         <div key={col} className="boardItem">
                             <InputSquare

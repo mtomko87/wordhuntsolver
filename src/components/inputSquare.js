@@ -9,16 +9,17 @@ const InputSquare = props => {
     });
 
     const handleKeyDown = e => {
+        e.preventDefault();
         if (e.keyCode >= 65 && e.keyCode <= 90) { // letters
             props.setLetter(props.row, props.col, e.key);
             props.setFocus(props.row, props.col + 1);
         }
         else if (e.keyCode === 8) { // backspace
-            props.setLetter(props.row, props.col, null);
+            props.setLetter(props.row, props.col, "");
             props.setFocus(props.row, props.col - 1);
         }
         else if (e.keyCode === 46) { // delete
-            props.setLetter(props.row, props.col, null);
+            props.setLetter(props.row, props.col, "");
             props.setFocus(props.row, props.col);
         }
         else if (e.keyCode === 37) { // left
@@ -39,9 +40,12 @@ const InputSquare = props => {
     }
 
     return (
-        <div ref={square} className="inputSquare" tabIndex="0" onKeyDown={handleKeyDown}>
+        /*<div ref={square} className="inputSquare" tabIndex="0" onKeyDown={handleKeyDown}>
             <p className="inputText">{props.letter}</p>
-        </div>
+        </div>*/
+        <input ref={square} className="inputSquare" onKeyDown={handleKeyDown} defaultValue={props.letter}>
+
+        </input>
     );
 }
 
