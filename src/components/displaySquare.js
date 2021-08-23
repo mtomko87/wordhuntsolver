@@ -16,6 +16,7 @@ const DisplaySquare = props => {
         setPos();
         window.addEventListener("resize", setPos);
         return () => window.removeEventListener("resize", setPos)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
