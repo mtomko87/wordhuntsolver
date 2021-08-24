@@ -5,7 +5,11 @@
     height: 100vh;
 }
 
+.loadingTextContainer {
+    width: min(500px, 80vw);
+}
+
 .loadingText {
     color: var(--text-color);
-    font-size: 100px;
+    font-size: min(100px, 16vw);
 }

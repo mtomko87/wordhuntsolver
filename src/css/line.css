@@ -1,6 +1,6 @@
 .line {
     position: absolute;
     background-color: rgba(255, 0, 111, 0.2);
-    height: 14px;
+    height: 12px;
     border-radius: 10px;
 }

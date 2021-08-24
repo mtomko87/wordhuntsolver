@@ -9,15 +9,15 @@ const Line = props => {
         const initialLength = Math.sqrt((props.end.x - props.start.x) ** 2 + (props.end.y - props.start.y) ** 2);
         const normalX = (props.end.x - props.start.x) / initialLength;
         const normalY = (props.end.y - props.start.y) / initialLength;
-        const start = {x: props.start.x - (normalX * 7), y: props.start.y - (normalY * 7)};
-        const end = {x: props.end.x + (normalX * 7), y: props.end.y + (normalY * 7)};
+        const start = {x: props.start.x - (normalX * 6), y: props.start.y - (normalY * 6)};
+        const end = {x: props.end.x + (normalX * 6), y: props.end.y + (normalY * 6)};
     
         const length = Math.sqrt((end.x - start.x) ** 2 + (end.y - start.y) ** 2);
         const angle = Math.atan2(end.y - start.y, end.x - start.x);
         const midpointX = (start.x + end.x) / 2;
         const midpointY = (start.y + end.y) / 2;
         const posX = midpointX - (length / 2);
-        const posY = midpointY - 7;
+        const posY = midpointY - 6;
 
         const element = line.current;
         element.style.width = length + "px";

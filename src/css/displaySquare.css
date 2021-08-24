@@ -1,9 +1,9 @@
 .displaySquare {
-    height: min(100px, 10vmin);;
-    width: min(100px, 10vmin);;
+    width: 85%;
+    height: 85%;
+    border-radius: 10%;
     background-color: white;
     box-shadow: 2px 2px 5px #ccc;
-    border-radius: min(10px, 1vmin);
     text-align: center;
     display: flex;
     justify-content: center;

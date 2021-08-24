@@ -61,7 +61,7 @@ const InputBoard = props => {
     return (
         <div className="inputBoard">
             {numbers.map((row) =>
-                <div key={row}>
+                <div key={row} className="inputRow">
                     {numbers.map((col) =>
                         <div key={col} className="boardItem">
                             <InputSquare

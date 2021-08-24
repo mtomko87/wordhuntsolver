@@ -1,17 +1,17 @@
 .inputSquare {
-    height: min(100px, 10vmin);
-    width: min(100px, 10vmin);
+    width: 85%;
+    height: 85%;
+    border-radius: 10%;
+    font-size: 400%;
     border: none;
     caret-color: transparent;
     background-color: white;
     box-shadow: 2px 2px 5px #ccc;
-    border-radius: min(10px, 1vmin);
     text-align: center;
     position: relative;
     outline: none;
-    bottom: 0px;
+    bottom: 0;
     transition: 0.2s;
-    font-size: min(60px, 6vmin);
     color: var(--text-color);
 }
 
@@ -19,11 +19,4 @@
     background-color: var(--highlight-color);
     bottom: 3px;
     box-shadow: 2px 5px 5px #ccc;
-}
-
-.inputText {
-    margin: 0;
-    margin-top: 10px;
-    font-size: 60px;
-    color: var(--text-color);
 }

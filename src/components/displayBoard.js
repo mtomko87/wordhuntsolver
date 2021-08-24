@@ -38,7 +38,7 @@ const DisplayBoard = props => {
     return (
         <div className="displayBoard">
             {props.letters.map((row, rowIndex) => 
-                <div key={rowIndex}>
+                <div key={rowIndex} class="displayRow">
                     {row.map((letter, colIndex) =>
                         <div key={colIndex} className="displayBoardItem">
                             <DisplaySquare letter={letter} setPos={pos => setSquarePosition(pos, rowIndex, colIndex)}/>

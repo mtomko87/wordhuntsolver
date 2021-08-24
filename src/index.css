@@ -21,7 +21,7 @@ body {
 .backButton {
 	width: 80px;
 	height: 80px;
-	position: absolute;
+	position: fixed;
 	left: 30px;
 	top: 50%;
 	margin-top: -40px;
@@ -32,9 +32,19 @@ body {
 	background-image: url('assets/back.png');
 	background-repeat: no-repeat;
     background-position: 20px 20px;
-	transition: 0.2s;
+	transition: background-color 0.2s;
 }
 
 .backButton:hover {
 	background-color: #ff4294;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .backButton {
+		margin: 0;
+		top: -30px;
+		left: -30px;
+		background-image: url('assets/back-small.png');
+		background-position: 35px 35px;
+	}
 }

@@ -1,4 +1,25 @@
+.inputBoard {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRow {
+    flex: 1;
+    display: flex;
+}
+
 .boardItem {
-    display: inline-block;
-    padding: min(10px, 1vmin);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .inputBoard {
+        width: 95vw;
+        height: 95vw;
+    }
 }
