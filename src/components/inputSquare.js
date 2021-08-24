@@ -1,11 +1,24 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../css/inputSquare.css'
 
 const InputSquare = props => {
 
+    const [fontSize, setFontSize] = useState("0px");
+
     const square = useRef(null);
+
+    const calcFontSize = () => {
+        const rect = square.current.getBoundingClientRect();
+        const width = rect.width;
+        const size = (width * 0.6) + "px";
+        setFontSize(size);
+    }
+
     useEffect(() => {
         if (props.focused) square.current.focus();
+        calcFontSize();
+        window.addEventListener("resize", calcFontSize);
+        return () => window.removeEventListener("resize", calcFontSize)
     });
 
     const handleKeyDown = e => {
@@ -40,11 +53,7 @@ const InputSquare = props => {
     }
 
     return (
-        /*<div ref={square} className="inputSquare" tabIndex="0" onKeyDown={handleKeyDown}>
-            <p className="inputText">{props.letter}</p>
-        </div>*/
-        <input ref={square} className="inputSquare" onKeyDown={handleKeyDown} defaultValue={props.letter}>
-
+        <input ref={square} className="inputSquare" onKeyDown={handleKeyDown} defaultValue={props.letter} style={{fontSize: fontSize}}>
         </input>
     );
 }

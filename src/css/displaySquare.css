@@ -12,6 +12,5 @@
 
 .displayLetter {
     margin: 0;
-    font-size: min(60px, 6vmin);
     color: var(--text-color);
 }
