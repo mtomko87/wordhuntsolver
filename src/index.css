@@ -21,7 +21,7 @@ body {
 .backButton {
 	width: 80px;
 	height: 80px;
-	position: fixed;
+	position: absolute;
 	left: 30px;
 	top: 50%;
 	margin-top: -40px;
@@ -41,10 +41,9 @@ body {
 
 @media (max-aspect-ratio: 1/1) {
     .backButton {
+		background-color: #ff4294;
+		position: static;
 		margin: 0;
-		top: -30px;
-		left: -30px;
-		background-image: url('assets/back-small.png');
-		background-position: 35px 35px;
+		margin-top: 30px;
 	}
 }

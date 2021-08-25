@@ -3,6 +3,7 @@
     height: 600px;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .inputRow {
