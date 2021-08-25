@@ -60,12 +60,13 @@ const InputSquare = props => {
         <input
             ref={square}
             className="inputSquare"
-            onKeyDown={handleKeyDown}
             defaultValue={props.letter}
             style={{fontSize: fontSize}}
             maxLength="1"
+            onKeyDown={handleKeyDown}
             onPaste={disable}
             onDrop={disable}
+            onInput={disable}
         ></input>
     );
 }
