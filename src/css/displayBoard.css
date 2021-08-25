@@ -1,6 +1,6 @@
 .displayBoard {
-    width: 600px;
-    height: 600px;
+    width: min(600px, 70vh);
+    height: min(600px, 70vh);
     display: flex;
     flex-direction: column;
 }
