@@ -13,6 +13,7 @@
     transition: 0.2s;
     color: var(--text-color);
     padding: 0;
+    -webkit-appearance: none;
 }
 
 .inputSquare:focus {
