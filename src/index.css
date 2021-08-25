@@ -41,7 +41,6 @@ body {
 
 @media (max-aspect-ratio: 1/1) {
     .backButton {
-		background-color: #ff4294;
 		position: static;
 		margin: 0;
 		margin-top: 30px;
