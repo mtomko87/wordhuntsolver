@@ -11,7 +11,7 @@ const ResultsScreen = props => {
         <div className="resultsScreen">
             <button className="backButton" onClick={props.goHome}></button>
             <div className="boardDiv">
-                <p className="wordCount">{props.results.length + " WORDS"}</p>
+                <p className="wordCount">{props.results.length} WORD{props.results.length !== 1 ? "S" : ""}</p>
                 <DisplayBoard letters={props.board} path={path}/>
             </div>
             {props.results.length > 0 && <div className="wordsDivOuter">
