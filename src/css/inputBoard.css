@@ -1,6 +1,6 @@
 .inputBoard {
-    width: min(600px, 70vh);
-    height: min(600px, 70vh);;
+    width: min(600px, 60vh);
+    height: min(600px, 60vh);;
     display: flex;
     flex-direction: column;
 }
@@ -21,6 +21,5 @@
     .inputBoard {
         width: 95vw;
         height: 95vw;
-        margin-top: 20px;
     }
 }

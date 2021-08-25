@@ -6,6 +6,10 @@
     outline: none;
 }
 
+.word:hover {
+    background-color: #eee;
+}
+
 .word:focus {
     background-color: var(--highlight-color);
 }

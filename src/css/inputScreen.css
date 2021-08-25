@@ -6,6 +6,13 @@
     min-height: 100vh;
 }
 
+.inputPrompt {
+    font-size: 48px;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
 .findWords {
     position: relative;
     bottom: 0;
@@ -28,4 +35,10 @@
 .findWords:disabled {
     background-color: #888;
     cursor: default;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .inputPrompt {
+        margin-top: 20px;
+    }
 }
