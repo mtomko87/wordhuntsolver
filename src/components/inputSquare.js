@@ -66,7 +66,6 @@ const InputSquare = props => {
             onKeyDown={handleKeyDown}
             onPaste={disable}
             onDrop={disable}
-            onInput={disable}
         ></input>
     );
 }
