@@ -52,9 +52,21 @@ const InputSquare = props => {
         }
     }
 
+    const disable = e => {
+        e.preventDefault();
+    }
+
     return (
-        <input ref={square} className="inputSquare" onKeyDown={handleKeyDown} defaultValue={props.letter} style={{fontSize: fontSize}}>
-        </input>
+        <input
+            ref={square}
+            className="inputSquare"
+            onKeyDown={handleKeyDown}
+            defaultValue={props.letter}
+            style={{fontSize: fontSize}}
+            maxLength="1"
+            onPaste={disable}
+            onDrop={disable}
+        ></input>
     );
 }
 
