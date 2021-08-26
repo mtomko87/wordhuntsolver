@@ -3,7 +3,6 @@ import InputScreen from './components/inputScreen';
 import LoadingScreen from './components/loadingScreen';
 import ResultsScreen from './components/resultsScreen';
 import wordHunt from './functions/wordHunt';
-import './App.css';
 import SizeScreen from './components/sizeScreen';
 
 function App() {
