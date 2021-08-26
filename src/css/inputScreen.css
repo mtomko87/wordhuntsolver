@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     min-height: 100vh;
 }
 
@@ -28,4 +29,6 @@
 .promptText {
     font-size: 36px;
     color: var(--text-color);
+    margin-right: 10px;
+    margin-left: 10px;
 }
