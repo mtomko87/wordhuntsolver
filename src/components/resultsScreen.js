@@ -9,7 +9,7 @@ const ResultsScreen = props => {
     const [atTop, setAtTop] = useState(true);
     const wordsDiv = useRef(null);
 
-    const scrollToTop = (e) => {
+    const scrollToTop = () => {
         wordsDiv.current.scrollTop = 0;
         wordsDiv.current.scrollLeft = 0;
     }
