@@ -6,5 +6,5 @@ wordhuntsolver.com is a web app built with ReactJS. It will find all possible wo
 
 Setup:
 
-`npm install`\
-`npm start`
+    npm install
+    npm start
