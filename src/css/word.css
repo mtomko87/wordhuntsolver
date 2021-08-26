@@ -1,6 +1,6 @@
 .word {
     width: fit-content;
-    padding: 12px 25px;
+    padding: 12px 23px;
     border-radius: 100px;
     cursor: pointer;
     outline: none;
@@ -16,6 +16,6 @@
 
 .wordText {
     margin: 0;
-    font-size: 32px;
+    font-size: 26px;
     color: var(--text-color);
 }
