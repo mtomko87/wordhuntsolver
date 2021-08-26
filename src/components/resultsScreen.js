@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import DisplayBoard from "./displayBoard";
 import '../css/resultsScreen.css';
 import Word from "./word";
@@ -6,6 +6,17 @@ import Word from "./word";
 const ResultsScreen = props => {
 
     const [path, setPath] = useState([]);
+    const [atTop, setAtTop] = useState(true);
+    const wordsDiv = useRef(null);
+
+    const scrollToTop = (e) => {
+        wordsDiv.current.scrollTop = 0;
+        wordsDiv.current.scrollLeft = 0;
+    }
+
+    const handleScroll = (e) => {
+        setAtTop(!e.target.scrollTop && !e.target.scrollLeft)
+    }
 
     return (
         <div className="resultsScreen">
@@ -15,7 +26,8 @@ const ResultsScreen = props => {
                 <DisplayBoard letters={props.board} path={path}/>
             </div>
             {props.results.length > 0 && <div className="wordsDivOuter">
-                <div className="wordsDiv">
+                <button className="toTopButton" disabled={atTop} onClick={scrollToTop}></button>
+                <div className="wordsDiv" ref={wordsDiv} onScroll={handleScroll}>
                     {props.results.map(result =>
                         <Word key={result.word} word={result.word} path={result.path} setPath={setPath}/>
                     )}

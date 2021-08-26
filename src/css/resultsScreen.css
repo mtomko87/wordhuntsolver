@@ -13,6 +13,32 @@
     margin-right: 20px;
     display: flex;
     flex-flow: column;
+    position: relative;
+}
+
+.toTopButton {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -25px;
+    border: none;
+    background-color: #888;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-image: url('../assets/top.png');
+	background-repeat: no-repeat;
+    background-position: 10px 10px;
+    transition: opacity 0.5s, background-color 0.2s;
+}
+
+.toTopButton:hover {
+    background-color: var(--main-color);
+}
+
+.toTopButton:disabled {
+    opacity: 0;
 }
 
 .wordsDiv {
@@ -21,7 +47,8 @@
     padding: 20px;
     border-radius: 12px;
     flex: 1 1 auto;
-    overflow-y: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 .wordsDiv::-webkit-scrollbar {
@@ -40,11 +67,28 @@
 }
 
 @media (max-aspect-ratio: 1/1) {
+
     .resultsScreen {
         flex-direction: column;
     }
 
     .wordsDivOuter {
         height: fit-content;
+        width: 100vw;
+        padding: 0 20px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .toTopButton {
+        top: 50%;
+        margin-top: -25px;
+        left: 35px;
+        margin-left: 0;
+        background-image: url('../assets/left.png');
+    }
+
+    .wordsDiv {
+        display: flex;
     }
 }

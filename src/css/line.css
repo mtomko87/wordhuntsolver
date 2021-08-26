@@ -1,12 +1,12 @@
 .line {
     position: absolute;
     background-color: rgba(255, 0, 111, 0.2);
-    height: min(21px, 2.45vh);
+    height: min(18px, 2.1vh);
     border-radius: 100px;
 }
 
 @media (max-aspect-ratio: 1/1) {
     .line {
-        height: 3.325vw;
+        height: 2.85vw;
     }
 }

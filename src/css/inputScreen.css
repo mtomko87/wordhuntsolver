@@ -12,7 +12,7 @@
     border: none;
     width: 300px;
     height: 70px;
-    background-color: #ff4294;
+    background-color: var(--main-color);
     color: white;
     border-radius: 100px;
     cursor: pointer;
