@@ -21,11 +21,11 @@
     transition: background-color 0.5s, bottom 0.1s;
 }
 
-.findWords:not([disabled]):hover {
+.findWords:hover {
     bottom: 3px;
 }
 
-.findWords:disabled {
-    background-color: #888;
-    cursor: default;
+.promptText {
+    font-size: 36px;
+    color: var(--text-color);
 }
